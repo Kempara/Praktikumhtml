@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAG Събор 2025</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .parallax-header, .parallax-section {
+            position: relative;
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .parallax-header {
+            background-image: url('static/head.png');
+        }
+
+        #section1 {
+            background-image: url('static/section1.png');
+        }
+
+        #section2 {
+            background-image: url('static/section2.png');
+        }
+
+        #section3 {
+            background-image: url('static/section3.png');
+        }
+
+        .header-content, .section-content {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+        }
+        .button {
+  font-size: 1.5rem;
+  color: #fafafa;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #fafafa;
+  background: #252525;
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+  margin: 35px 0;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+        .btn-17,
+.btn-17 *,
+.btn-17 :after,
+.btn-17 :before,
+.btn-17:after,
+.btn-17:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-17 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.btn-17:disabled {
+  cursor: default;
+}
+
+.btn-17:-moz-focusring {
+  outline: auto;
+}
+
+.btn-17 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-17 [hidden] {
+  display: none;
+}
+
+.btn-17 {
+  border-radius: 99rem;
+  border-width: 2px;
+  padding: 0.8rem 3rem;
+  z-index: 0;
+}
+
+.btn-17,
+.btn-17 .text-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-17 .text-container {
+  display: block;
+  mix-blend-mode: difference;
+}
+
+.btn-17 .text {
+  display: block;
+  position: relative;
+}
+
+.btn-17:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+}
+
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.btn-17:after,
+.btn-17:before {
+  --skew: 0.2;
+  background: #fff;
+  content: "";
+  display: block;
+  height: 102%;
+  left: calc(-50% - 50% * var(--skew));
+  pointer-events: none;
+  position: absolute;
+  top: -104%;
+  transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+.btn-17:after {
+  --progress: 0%;
+  left: calc(50% + 50% * var(--skew));
+  top: 102%;
+  z-index: -1;
+}
+
+.btn-17:hover:before {
+  --progress: 100%;
+}
+
+.btn-17:hover:after {
+  --progress: -102%;
+}
+.navbar {
+        background-color: #333;
+        padding: 15px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+    .navbar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar ul li {
+        margin: 0 15px;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+    .navbar ul li a:hover {
+        color: #ffcc00;
+    }
+        @media (max-width: 768px) {
+            .parallax-header, .parallax-section {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="parallax-header">
+    <div class="header-content">
+        <h1>VAG Събор 2025</h1>
+        <p>Присъединете се към най-голямото събитие за фенове на VAG!</p>
+    </div>
+</header>
+<div class="navbar">
+    <ul>
+        <li><a href="#section1">За нас</a></li>
+        <li><a href="#section2">Програма</a></li>
+        <li><a href="#section3">Записване</a></li>
+    </ul>
+</div>
+
+<section class="parallax-section" id="section1">
+    <div class="section-content">
+        <h2>За Събора</h2>
+        <p>Това е събитието, което всеки фен на VAG трябва да посети. Ще има изложения, състезания и много други
+            забавления.</p>
+        <a href="about" class="btn-17">За нас</a>
+    </div>
+</section>
+
+<section class="parallax-section" id="section2">
+    <div class="section-content">
+        <h2>Програма</h2>
+        <p>Разгледайте нашата програма и се подгответе за незабравимо преживяване.</p>
+        <a href="program" class="button">Програма</a>
+    </div>
+</section>
+
+<section class="parallax-section" id="section3">
+    <div class="section-content">
+        <h2>Регистрация</h2>
+        <p>Регистрирайте се сега, за да гарантирате мястото си на събора.</p>
+        <a href="reservation" class="btn">Регистрация</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 VAG Събор. Всички права запазени.</p>
+</footer>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const parallaxSections = document.querySelectorAll('.parallax-header, .parallax-section');
+        parallaxSections.forEach(section => {
+            const scrollPosition = window.pageYOffset;
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+
+            if (scrollPosition > sectionTop - window.innerHeight && scrollPosition <= sectionTop + sectionHeight) {
+                const speed = 0.5;
+                const yPos = -(scrollPosition - sectionTop) * speed;
+                section.style.backgroundPosition = `center ${yPos}px`;
+            }
+        });
+    });
+</script>
+</body>
+</html>
